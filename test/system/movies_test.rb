@@ -14,7 +14,7 @@ class MoviesTest < ApplicationSystemTestCase
     visit movies_url
     click_on "New Movie"
 
-    fill_in "Author", with: @movie.author
+    fill_in "Director", with: @movie.director
     fill_in "Title", with: @movie.title
     click_on "Create Movie"
 
@@ -26,7 +26,7 @@ class MoviesTest < ApplicationSystemTestCase
     visit movies_url
     click_on "Edit", match: :first
 
-    fill_in "Author", with: @movie.author
+    fill_in "Director", with: @movie.director
     fill_in "Title", with: @movie.title
     click_on "Update Movie"
 
